@@ -80,7 +80,7 @@ function showSkillInfo(heading, first) {
 }
 let ShowCss = document.querySelector("#showcss");
 ShowCss.addEventListener("click", () => {
-  showSkillInfo("css", "<li class='liststyle'>Bootstrap</li><li class='liststyle'>Responsive web</li><li class='liststyle'>flex tehnology</li><li class='liststyle'>Grids</li><li class='liststyle'>transforms/transitions</li>");
+  showSkillInfo("css", "<li>scss</li><li class='liststyle'>Bootstrap</li><li class='liststyle'>Responsive web</li><li class='liststyle'>flex tehnology</li><li class='liststyle'>Grids</li><li class='liststyle'>transforms/transitions</li>");
   
 });
 let ShowHtml = document.querySelector("#showhtml");
