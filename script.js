@@ -72,15 +72,25 @@ function showSkillInfo(heading, first) {
   
   main.appendChild(showDescription);
 
+  let closebtn = document.createElement('div');
+  closebtn.classList.add('closebtn');
+  showDescription.appendChild(closebtn);
+closebtn.innerHTML = "&#215;";
+
   overlay.onclick = removeOverlay = () => {
     var remove = document.querySelector(".overlay");
     main.removeChild(remove);
     main.removeChild(showDescription);
   };
+
+  closebtn.onclick = function() {
+    removeOverlay ();
+  }
 }
+
 let ShowCss = document.querySelector("#showcss");
 ShowCss.addEventListener("click", () => {
-  showSkillInfo("css", "<li>scss</li><li class='liststyle'>Bootstrap</li><li class='liststyle'>Responsive web</li><li class='liststyle'>flex tehnology</li><li class='liststyle'>Grids</li><li class='liststyle'>transforms/transitions</li>");
+  showSkillInfo("css", "<li class='liststyle'>scss</li><li class='liststyle'>Bootstrap</li><li class='liststyle'>Responsive web</li><li class='liststyle'>flex tehnology</li><li class='liststyle'>Grids</li><li class='liststyle'>transforms/transitions</li>");
   
 });
 let ShowHtml = document.querySelector("#showhtml");
