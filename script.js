@@ -103,7 +103,7 @@ ShowJavascriptl.addEventListener("click", () => {
 });
 let ShowPhp = document.querySelector("#showphp");
 ShowPhp.addEventListener("click", () => {
-  showSkillInfo("php", "<li class='liststyle'>Laravel</li><li class='liststyle'>connect to mySql database</li>");
+  showSkillInfo("php", "<li class='liststyle'>Laravel(basics)</li><li class='liststyle'>connect to mySql database</li>");
 });
 
 //portfolio script
